@@ -7,26 +7,25 @@
 
     <title>Planet Orbit Simulator</title>
 
-    <!-- Load p5.js first -->
+    <!-- Load p5.js before sketch.js -->
     <script src="https://cdn.jsdelivr.net/npm/p5@1.11.11/lib/p5.min.js"></script>
-
-    <!-- Load animation code -->
     <script src="sketch.js" defer></script>
 
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #0a142d;
-            color: white;
             margin: 0;
             padding: 20px;
+            background-color: #0a142d;
+            color: white;
+            font-family: Arial, sans-serif;
             text-align: center;
         }
 
         #animation-container {
-            width: 100%;
             display: flex;
             justify-content: center;
+            width: 100%;
+            margin: 0 auto;
         }
 
         #animation-container canvas {
@@ -53,13 +52,12 @@
 
 <body>
 
-    <!-- Animation comes FIRST -->
+    <!-- FIRST: Planet Orbit Simulator and Controls -->
     <div id="animation-container"></div>
 
-    <!-- Video comes AFTER animation -->
+    <!-- SECOND: Explanation Video -->
     <section>
         <h2>Explanation Video</h2>
-
         <p>
             <a href="VIDEO_LINK_HERE"
                target="_blank"
@@ -69,14 +67,17 @@
         </p>
     </section>
 
+    <!-- THIRD: Sources and AI Tools -->
     <section>
         <h2>Sources and AI Tools Used</h2>
-
         <ul>
             <li>p5.js - Animation library</li>
-            <li>ChatGPT (OpenAI) - Coding assistance,debugging and mathematical equations</li>
-            <li>Sine and Cosine - Used for circular movement</li>
-            <li>Borrowed Code - No other external code sources used</li>
+            <li>ChatGPT (OpenAI) - Coding assistance,
+                debugging, and mathematical explanations</li>
+            <li>Sine and Cosine - Mathematical functions
+                used for circular movement</li>
+            <li>Borrowed Code - No other external
+                code sources used</li>
         </ul>
     </section>
 
