@@ -4,10 +4,15 @@ let orbitRadius = 125;
 let orbitSpeed = 0.02;
 let isPaused = false;
 
+
 function setup() {
-  createCanvas(700, 600);
-  textFont("Arial");
+    let canvas = createCanvas(700, 600);
+
+    canvas.parent("animation-container");
+
+    textFont("Arial");
 }
+
 
 function draw() {
   background(10, 20, 45);
