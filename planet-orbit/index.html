@@ -10,26 +10,26 @@
     <!-- Load p5.js first -->
     <script src="https://cdn.jsdelivr.net/npm/p5@1.11.11/lib/p5.min.js"></script>
 
-    <!-- Load the animation -->
+    <!-- Load animation code -->
     <script src="sketch.js" defer></script>
 
     <style>
         body {
             font-family: Arial, sans-serif;
-            text-align: center;
             background-color: #0a142d;
             color: white;
             margin: 0;
             padding: 20px;
+            text-align: center;
         }
 
         #animation-container {
+            width: 100%;
             display: flex;
             justify-content: center;
-            margin: 0 auto;
         }
 
-        canvas {
+        #animation-container canvas {
             display: block;
             max-width: 100%;
             height: auto;
@@ -38,10 +38,6 @@
         section {
             max-width: 700px;
             margin: 25px auto;
-        }
-
-        h2 {
-            color: white;
         }
 
         a {
@@ -57,10 +53,10 @@
 
 <body>
 
-    <!-- Animation and keyboard controls -->
+    <!-- Animation comes FIRST -->
     <div id="animation-container"></div>
 
-    <!-- Explanation video -->
+    <!-- Video comes AFTER animation -->
     <section>
         <h2>Explanation Video</h2>
 
@@ -73,31 +69,14 @@
         </p>
     </section>
 
-    <!-- Sources and AI tools -->
     <section>
         <h2>Sources and AI Tools Used</h2>
 
         <ul>
-            <li>
-                p5.js Library - Used to create
-                and display the animation.
-            </li>
-
-            <li>
-                ChatGPT (OpenAI) - Used for
-                coding assistance, debugging,
-                and mathematical explanations.
-            </li>
-
-            <li>
-                Mathematics - Sine and cosine
-                used for circular motion.
-            </li>
-
-            <li>
-                Borrowed Code - No other external
-                code sources used.
-            </li>
+            <li>p5.js - Animation library</li>
+            <li>ChatGPT (OpenAI) - Coding assistance,debugging and mathematical equations</li>
+            <li>Sine and Cosine - Used for circular movement</li>
+            <li>Borrowed Code - No other external code sources used</li>
         </ul>
     </section>
 
