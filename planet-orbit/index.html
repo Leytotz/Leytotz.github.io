@@ -7,10 +7,8 @@
 
     <title>Planet Orbit Simulator</title>
 
-    <!-- Load p5.js library first -->
+    <!-- Load p5.js before sketch.js -->
     <script src="https://cdn.jsdelivr.net/npm/p5@1.11.11/lib/p5.min.js"></script>
-
-    <!-- Load our animation code -->
     <script src="sketch.js" defer></script>
 
     <style>
@@ -29,7 +27,7 @@
 
         canvas {
             display: block;
-            margin: 20px auto;
+            margin: 0 auto;
             max-width: 100%;
             height: auto;
         }
@@ -39,32 +37,23 @@
         }
 
         section {
-            margin: 25px auto;
             max-width: 700px;
+            margin: 20px auto;
+        }
+
+        ul {
+            display: inline-block;
+            text-align: left;
         }
     </style>
 </head>
 
 <body>
 
-    <h1>Planet Orbit Simulator</h1>
+    <!-- The animation and keyboard controls
+         are displayed by sketch.js -->
 
-    <p>
-        A math-based animation using
-        sine and cosine in p5.js.
-    </p>
-
-    <!-- Animation appears here automatically -->
-    <!-- The sketch also displays controls on canvas -->
-
-    <section>
-        <h2>Keyboard Controls</h2>
-
-        <p>SPACE - Pause or Resume</p>
-        <p>UP ARROW - Increase Orbit Speed</p>
-        <p>DOWN ARROW - Decrease Orbit Speed</p>
-    </section>
-
+    <!-- These sections appear after the canvas -->
     <section>
         <h2>Explanation Video</h2>
 
@@ -80,7 +69,7 @@
     <section>
         <h2>Sources and AI Tools Used</h2>
 
-        <ul style="text-align: left;">
+        <ul>
             <li>
                 p5.js Library - Used for creating
                 and displaying the animation.
